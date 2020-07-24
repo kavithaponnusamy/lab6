@@ -1,5 +1,5 @@
 package lab6;
-// Kavitha and 
+// Kavitha and Riyle Newton 
 import java.util.Random;
 import java.util.Scanner;
 
@@ -9,7 +9,6 @@ public class RollingDice {
 		Scanner scnr = new Scanner(System.in);
 		String again;
 		int num, num1, num2;
-		String msg1, msg2;
 		int rollCount=0;
 		System.out.println("Welcome to the Grand Circus Casino!");
 		System.out.println("How many sides shoud each die have?: ");
@@ -23,11 +22,18 @@ public class RollingDice {
 			System.out.println(num2);
 			isSnakeEyes(num1, num2);
 			isBoxCars(num1, num2);
+			isCraps(num1,num2);
 			System.out.println("\nDo you want to roll again?(y/n):");
 			again = scnr.next();
 		} while (again.equalsIgnoreCase("y"));
 		System.out.println("\nThanks for using the Casino App!");
 		scnr.close();
+	}
+	public static void isCraps(int res1, int res2) {
+		int tot=res1+res2;
+		if ((tot == 2) || (tot == 3) || (tot==12)) {
+			System.out.println("Craps!");
+		}
 	}
 
 	public static void isBoxCars(int res1, int res2) {
