@@ -9,7 +9,6 @@ public class RollingDice {
 		Scanner scnr = new Scanner(System.in);
 		String again;
 		int num, num1, num2;
-		String msg1, msg2;
 		int rollCount=0;
 		System.out.println("Welcome to the Grand Circus Casino!");
 		System.out.println("How many sides shoud each die have?: ");
