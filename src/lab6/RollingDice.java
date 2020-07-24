@@ -20,9 +20,11 @@ public class RollingDice {
 			System.out.println(num1);
 			num2 = generateRandomDieRoll(num);
 			System.out.println(num2);
+			if(num==6) {
 			isSnakeEyes(num1, num2);
 			isBoxCars(num1, num2);
 			isCraps(num1,num2);
+			}
 			System.out.println("\nDo you want to roll again?(y/n):");
 			again = scnr.next();
 		} while (again.equalsIgnoreCase("y"));
@@ -37,13 +39,15 @@ public class RollingDice {
 	}
 
 	public static void isBoxCars(int res1, int res2) {
-		if ((res1 == 6) && (res2 == 6)) {
+		int tot=res1+res2;
+		if (tot == 12) {
 			System.out.println("Boxcars!");
 		}
 	}
 
 	public static void isSnakeEyes(int res1, int res2) {
-		if ((res1 == 1) && (res2 == 1)) {
+		int tot=res1+res2;
+		if (tot == 2) {
 			System.out.println("Snake Eyes!");
 		}
 	}
