@@ -1,5 +1,9 @@
 package lab6;
+<<<<<<< HEAD
 // Kavitha and Riyle Newton 
+=======
+// Kavitha Ponnusamy and Riley Newton
+>>>>>>> 48d28b7b7cb24cbd1be22befb9c4297b71b9bfe7
 import java.util.Random;
 import java.util.Scanner;
 
