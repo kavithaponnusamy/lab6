@@ -1,5 +1,5 @@
 package lab6;
-// Kavitha and 
+// Kavitha Ponnusamy and Riley Newton
 import java.util.Random;
 import java.util.Scanner;
 
