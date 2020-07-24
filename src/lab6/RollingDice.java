@@ -1,5 +1,5 @@
 package lab6;
-
+//Kavitha & Riley
 import java.util.Random;
 import java.util.Scanner;
 
